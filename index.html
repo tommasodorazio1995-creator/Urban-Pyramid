@@ -1,63 +1,90 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Urban Pyramid – Casa vacanze Ostiense</title>
+  <title>Urban Pyramid – Holiday Apartment in Rome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #222; }
-    header { padding: 2.5rem 1.5rem 1.5rem; text-align: center; }
-    h1 { margin-bottom: 0.2rem; font-size: 2rem; }
-    .sub { color: #555; max-width: 700px; margin: 0.2rem auto 0; }
-    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+    header {
+      padding: 2.5rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 0.4rem;
+      font-size: 2rem;
+    }
+    .sub {
+      color: #555;
+      max-width: 620px;
+      margin: 0 auto;
+      font-size: 0.98rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+      text-align: center;
+    }
     .hero {
-      width: 100%; max-height: 360px; object-fit: cover;
-      border-radius: 16px; margin-bottom: 1.5rem;
+      width: 100%;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 18px;
+      margin: 1.5rem 0 1.2rem;
+      background: #ddd;
     }
-    h2.section-title { margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.4rem; }
-    h3 { margin-top: 1.5rem; margin-bottom: 0.4rem; font-size: 1.1rem; }
-    p { margin: 0.3rem 0 0.8rem; }
-    ul { padding-left: 1.2rem; margin-top: 0.1rem; }
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .5rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.9rem;
+    }
     .pill {
-      display: inline-block; padding: 0.3rem 0.8rem; border-radius: 999px;
-      border: 1px solid #ddd; margin: 0.2rem 0.3rem 0;
-      font-size: 0.9rem; background: #fafafa;
-    }
-    .info-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-      gap: 1rem; margin-top: 0.8rem;
-    }
-    .card {
-      border-radius: 14px; border: 1px solid #eee; padding: 1rem 1.1rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid #e0e0e0;
       background: #fff;
     }
-    .card strong { display: inline-block; margin-bottom: 0.3rem; }
-    .badge-row { margin-top: 0.6rem; }
-    .badge {
-      display: inline-block; font-size: 0.85rem; padding: 0.25rem 0.7rem;
-      border-radius: 999px; background: #f3f4f6; margin: 0.15rem 0.25rem 0;
-    }
     .cta {
-      display: inline-block; margin-top: 1.5rem; padding: 0.9rem 1.8rem;
-      text-decoration: none; border-radius: 999px; font-weight: bold;
-      border: none; cursor: pointer; font-size: 1rem;
+      display: inline-block;
+      margin: 1.4rem 0 0.4rem;
+      padding: 0.9rem 2.1rem;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
     }
-    .cta-primary { background: #000; color: #fff; }
-    .highlight-box {
-      border-radius: 14px; border: 1px solid #eee; padding: 1rem 1.1rem;
-      background: #fafafa; margin-top: 1rem;
+    .cta-primary {
+      background: #000;
+      color: #fff;
     }
-    .two-cols {
-      display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-      gap: 1rem;
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.4rem;
     }
     footer {
-      text-align: center; font-size: 0.85rem; color: #777;
-      padding: 1.5rem 0 2.2rem; border-top: 1px solid #f0f0f0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #888;
+      padding: 1.4rem 0 2rem;
+      border-top: 1px solid #eaeaea;
       margin-top: 2rem;
     }
     @media (max-width: 600px) {
-      header { padding-top: 1.8rem; }
+      header { padding-top: 2rem; }
       h1 { font-size: 1.7rem; }
     }
   </style>
@@ -66,210 +93,48 @@
   <header>
     <h1>Urban Pyramid</h1>
     <div class="sub">
-      Casa vacanze accogliente e recentemente ristrutturata a due passi da Piramide Cestia,
-      nel cuore creativo del quartiere Ostiense: zona centrale e vivace, tra street art e storia,
-      a pochi minuti reali dal centro di Roma.
+      Cozy holiday apartment in Rome – Ostiense district, just a few minutes’ walk
+      from Piramide metro and Ostiense train station. Perfect for up to 3 guests.
     </div>
   </header>
 
   <div class="container">
 
-    <!-- FOTO PRINCIPALE: carica un file "foto-principale.jpg" nel repository per farla comparire -->
-    <img src="foto-principale.jpg" alt="Urban Pyramid – soggiorno e zona pranzo" class="hero">
+    <!-- HERO IMAGE: upload a file called "foto-principale.jpg" to this repo -->
+    <img src="foto-principale.jpg"
+         alt="Urban Pyramid – living and dining area"
+         class="hero">
 
-    <h2 class="section-title">Panoramica</h2>
-    <p>
-      Urban_Pyramid si trova al piano seminterrato di un palazzo d’epoca con portiere, affacciato su una corte interna
-      silenziosa e luminosa grazie alle ampie finestre. L’appartamento ospita comodamente fino a 3 persone, con cucina
-      attrezzata, bagno con ampia doccia e lavatrice. Metro B (Piramide) e treni da e per Fiumicino (stazione Ostiense)
-      sono raggiungibili a piedi in pochi minuti.
-    </p>
-    <div class="badge-row">
-      <span class="badge">3 ospiti</span>
-      <span class="badge">2 camere da letto</span>
-      <span class="badge">1 bagno</span>
-      <span class="badge">Wi-Fi fibra</span>
-      <span class="badge">Self check-in</span>
-      <span class="badge">Zona centrale e ben collegata</span>
+    <div class="highlights">
+      <span class="pill">3 guests</span>
+      <span class="pill">2 bedrooms · 1 bathroom</span>
+      <span class="pill">Fast Wi-Fi (fiber)</span>
+      <span class="pill">Self check-in</span>
+      <span class="pill">Quiet courtyard building</span>
+      <span class="pill">Central, well connected area</span>
     </div>
 
-    <h2 class="section-title">Lo spazio</h2>
     <p>
-      L’appartamento, accogliente e silenzioso, è di circa 65 m² ed è ideale per chi vuole vivere Roma da una posizione
-      centrale ma riservata. È composto da due camere, un bagno e una cucina con annessa zona pranzo.
+      Check real-time prices, availability, photos and reviews directly on Airbnb.
     </p>
 
-    <h3>Zona notte</h3>
-    <ul>
-      <li>Camera principale con letto matrimoniale, divano letto, armadio e TV con Chromecast.</li>
-      <li>Seconda camera con letto da una piazza e mezza e armadio aperto.</li>
-      <li>Lenzuola, coperte e asciugamani forniti.</li>
-    </ul>
-
-    <h3>Bagno</h3>
-    <ul>
-      <li>Bagno finestrato con ampia doccia, lavabo, WC, bidet e lavatrice.</li>
-      <li>Asciugacapelli, carta igienica e prodotti base per l’igiene personale (bagnoschiuma, shampoo, sapone mani).</li>
-    </ul>
-
-    <h3>Cucina e zona pranzo</h3>
-    <ul>
-      <li>Cucina completamente attrezzata con fornelli, forno, microonde, frigorifero con freezer.</li>
-      <li>Macchina del caffè, bollitore, servizi di base per cucinare (pentole, padelle, olio, sale, pepe) e stoviglie.</li>
-      <li>Tavolo da pranzo con sedute nella zona pranzo adiacente alla cucina.</li>
-    </ul>
-
-    <h2 class="section-title">Comfort e tranquillità</h2>
-    <p>
-      La casa è silenziosa, ben isolata e affacciata su una corte interna: fresca d’estate e calda d’inverno grazie alla
-      posizione seminterrata e al riscaldamento centralizzato del palazzo. È presente una connessione Wi-Fi gratuita ad
-      alta velocità (fibra ottica).
-    </p>
-
-    <h2 class="section-title">Dotazioni principali</h2>
-    <div class="two-cols">
-      <div class="card">
-        <strong>Bagno</strong>
-        <ul>
-          <li>Doccia ampia e finestrata</li>
-          <li>Asciugacapelli</li>
-          <li>Shampoo, sapone per il corpo, gel doccia</li>
-          <li>Prodotti per la pulizia</li>
-          <li>Bidet, acqua calda</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Camera da letto e lavanderia</strong>
-        <ul>
-          <li>Lavatriche</li>
-          <li>Lenzuola, coperte, asciugamani ed essenziali (sapone, carta igienica)</li>
-          <li>Grucce, spazio per conservare l’abbigliamento</li>
-          <li>Tende oscuranti, zanzariera</li>
-          <li>Ferro da stiro</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Famiglia e bambini</strong>
-        <ul>
-          <li>Culla e box bebè/culletta da viaggio sempre disponibili</li>
-          <li>Seggiolone pieghevole o trasformabile</li>
-          <li>Protezioni alle finestre</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Riscaldamento e climatizzazione</strong>
-        <ul>
-          <li>Riscaldamento centralizzato</li>
-          <li>Ventilatori portatili per l’estate</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Sicurezza domestica</strong>
-        <ul>
-          <li>Rilevatore di monossido di carbonio</li>
-          <li>Estintore</li>
-          <li>Kit di pronto soccorso</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Internet e intrattenimento</strong>
-        <ul>
-          <li>Wi-Fi a fibra ottica</li>
-          <li>TV con Chromecast per Netflix, YouTube e altri servizi streaming</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Cucina</strong>
-        <ul>
-          <li>Frigorifero e freezer</li>
-          <li>Forno e forno a microonde</li>
-          <li>Piano cottura a gas</li>
-          <li>Macchina del caffè e bollitore</li>
-          <li>Servizi di base per cucinare, piatti e posate</li>
-          <li>Tavolo da pranzo</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Parcheggio e servizi</strong>
-        <ul>
-          <li>Parcheggio gratuito in strada (non riservato)</li>
-          <li>Parcheggi a pagamento nelle vicinanze</li>
-          <li>Self check-in tramite cassetta per le chiavi</li>
-          <li>Lavanderia a gettoni nelle vicinanze</li>
-        </ul>
-      </div>
-    </div>
-
-    <h2 class="section-title">Accesso, quartiere e altre informazioni</h2>
-    <p>
-      Dopo la prenotazione riceverai una guida digitale multilingua con tutte le informazioni utili su casa, check-in,
-      Wi-Fi, trasporti, attrazioni, regole dell’alloggio e consigli sul quartiere. Gli ospiti hanno accesso esclusivo a
-      tutto l’appartamento.
-    </p>
-
-    <div class="info-grid">
-      <div class="card">
-        <strong>Struttura della casa</strong>
-        <ul>
-          <li>Ingresso</li>
-          <li>Sala da pranzo</li>
-          <li>Cucina attrezzata</li>
-          <li>Bagno con ampia doccia finestrata</li>
-          <li>Due camere da letto (matrimoniale + letto da 1 piazza e mezza)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <strong>Quartiere Ostiense</strong>
-        <p>
-          Zona centrale, vivace e ben collegata, nota per street art, locali e ristoranti,
-          a breve distanza da Testaccio, Trastevere e dal centro storico.
-        </p>
-      </div>
-      <div class="card">
-        <strong>Note importanti</strong>
-        <ul>
-          <li>L’appartamento è al piano seminterrato e si raggiunge tramite mezzo piano di scale.</li>
-          <li>Il portiere è presente nel palazzo durante l’orario di lavoro.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="highlight-box">
-      <strong>Valutazioni su Airbnb</strong><br>
-      Alloggio molto apprezzato dagli ospiti, con punteggio medio di circa <strong>4,95/5</strong> su 20 recensioni,
-      self check-in tramite cassetta di sicurezza e host con esperienza da Superhost.
-    </div>
-
-    <p style="margin-top:1rem;">
-      <strong>Dati di registrazione:</strong><br>
-      Codice identificativo regionale: <strong>IT058091C21A8KWL5O</strong>
-    </p>
-
-    <h2 class="section-title">Prenotazioni</h2>
-    <p>
-      Per verificare disponibilità, prezzi aggiornati e recensioni dettagliate, usa la pagina ufficiale di Urban Pyramid
-      su Airbnb.
-    </p>
-
+    <!-- MAIN CALL TO ACTION -->
     <a class="cta cta-primary"
-       href="https://www.airbnb.it/rooms/1424559806175771560?guests=1&adults=1&s=67&unique_share_id=a6c35fe9-d5d6-44b1-84a5-6a9f5e676572"
+       href="https://www.airbnb.it/rooms/142455980617577560"
        target="_blank" rel="noopener">
-      Prenota su Airbnb
+      Book on Airbnb
     </a>
+
+    <div class="note">
+      You will be redirected to the official Airbnb listing of Urban Pyramid
+      to complete your reservation securely.
+    </div>
 
   </div>
 
   <footer>
-    Urban Pyramid – Casa vacanze a Roma, Via Ostiense (zona Piramide / Ostiense).<br>
-    Questo sito è indipendente da Airbnb ed è utilizzato come pagina informativa ufficiale
-    da collegare a Google Maps.
+    Urban Pyramid – Holiday apartment in Rome, Ostiense district.<br>
+    This page is an independent landing page used only to link to the official Airbnb listing.
   </footer>
 </body>
 </html>
